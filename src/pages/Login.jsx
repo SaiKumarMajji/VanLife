@@ -3,9 +3,11 @@ import {
     useLoaderData,
     useNavigation,
     Form,
-    redirect,
     useActionData
 } from "react-router-dom"
+
+import { redirect } from "../utils"
+
 import { loginUser } from "../api"
 
 export function loader({ request }) {
